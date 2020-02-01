@@ -1,13 +1,13 @@
-# LAB - Class 12
+# LAB - Class 11
 
 ## Project Name
-oAuth
+Authentication
 
 ### Author: Mohammed Alhawamdeh
 
 ### Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/Mohammed-401-advanced-javascript/Lab-11/pull/1)
 - [ci/cd](https://github.com/Mohammed-401-advanced-javascript/Lab-12/actions) (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
