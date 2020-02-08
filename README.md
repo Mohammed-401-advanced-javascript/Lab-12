@@ -7,8 +7,8 @@ OAuth Authentication
 
 ### Links and Resources
 
-- [submission PR](https://github.com/Mohammed-401-advanced-javascript/Lab-11/pull/1)
-- [ci/cd](https://github.com/Mohammed-401-advanced-javascript/Lab-12/actions) (GitHub Actions)
+- [submission PR](https://github.com/Mohammed-401-advanced-javascript/Lab-12/pull/1)
+- [ci/cd]() (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
@@ -18,8 +18,10 @@ OAuth Authentication
 
 i.e.
 
-- `PORT` - Port Number
+- `PORT` - 3000
 - `MONGODB_URI` - URL to the running mongo instance/db
+- `CLIENT_ID` = 66065e9b3ee1887bceba
+- `CLIENT_SECRET`= b7c611819dd17aa5f19fd34eb3ad34feb4af596b
 
 #### How to initialize/run your application (where applicable)
 

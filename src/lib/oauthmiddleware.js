@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+// eslint-disable-next-line strict
 'use strict';
 
 const superagent = require('superagent');
@@ -30,7 +32,7 @@ module.exports = async function authorize(req, res, next) {
   } catch(err) {
     next(err);
   }
-}
+};
 
 async function exchangeCodeForToken(code) {
   let tokenResponse = await superagent.post(tokenServerUrl).send({
@@ -38,8 +40,8 @@ async function exchangeCodeForToken(code) {
     client_id: CLIENT_ID,
     client_secret: CLIENT_SECRET,
     redirect_uri: API_SERVER,
-    grant_type: 'authorization_code'
-  })
+    grant_type: 'authorization_code',
+  });
 
   let access_token = tokenResponse.body.access_token;
   return access_token;
@@ -48,7 +50,7 @@ async function exchangeCodeForToken(code) {
 async function getRemoteUserInfo(token) {
   let userResponse = await superagent.get(remoteAPI)
     .set('user-agent', 'express-app')
-    .set('Authorization', `token ${token}`)
+    .set('Authorization', `token ${token}`);
 
   let user = userResponse.body;
   return user;
@@ -57,8 +59,8 @@ async function getRemoteUserInfo(token) {
 async function getUser(remoteUser) {
   let userRecord = {
     username: remoteUser.login,
-    password: 'oauthpassword'
-  }
+    password: 'oauthpassword',
+  };
   let newUser = new Users(userRecord);
   let user = await newUser.save();
   let token = newUser.generateToken(user);
